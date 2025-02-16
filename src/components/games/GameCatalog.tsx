@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Game, games } from '@/data/games';
+import { games } from '@/data/games';
 import GameCard from './GameCard';
 import TagFilter from './TagFilter';
 
