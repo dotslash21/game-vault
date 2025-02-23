@@ -11,6 +11,7 @@ export const tags = [
   'strategy',
   'classic',
   'multiplayer',
+  'arcade',
 ] as const;
 
 export type Tag = typeof tags[number];
@@ -23,5 +24,11 @@ export const games: Game[] = [
     tags: ['puzzle', 'strategy', 'classic', 'multiplayer'],
     route: '/games/tictactoe',
   },
-  // More games can be added here in the future
+  {
+    id: 'snake',
+    title: 'Snake',
+    thumbnail: 'https://placehold.co/600x400/e2e8f0/475569?text=Snake',
+    tags: ['arcade', 'classic'],
+    route: '/games/snake',
+  },
 ];
